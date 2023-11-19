@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadidas</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+<header>
+<section class="slider">
+    <div class="slider-content">
+         
+        <input type="radio" name="btn-radio" id="radio1">
+        <input type="radio" name="btn-radio" id="radio2">
+        <input type="radio" name="btn-radio" id="radio3">
+
+        <div class="slider-box primeiro">
+            <img  src="https://www.esportelandia.com.br/wp-content/uploads/2020/03/uniforme-titular-manchester-city-2019-20.jpg" alt="camisa de time">
+        </div>
+    
+    <div class="slider-box">
+        <img  src="https://www.esportelandia.com.br/wp-content/uploads/2020/03/uniforme-reserva-barcelona-2019-20-1536x864.jpg"  alt="slider2">
+    </div>
+    
+    <div class="slider-box">
+        <img src="https://www.esportelandia.com.br/wp-content/uploads/2020/03/terceiro-uniforme-chelsea-2019-20.jpg"  alt="slider3">
+</div>
+    
+<div class="nav-auto">
+    <div class="auto-btn1"></div>
+    <div class="auto-btn2"></div>
+    <div class="auto-btn3"></div>
+</div>    
+
+<div class="nav-manual">
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+</div>
+
+<script>
+    var radio =document.querySelector('.manual-btn')
+
+    document.getElementById('radio1').checked =true
+
+    setInterval(() => {
+        proximaimg()
+    },5000)
+
+    function proximaimg(){
+        cont++
+
+        if(cont > 3){
+            cont = 1
+        }
+
+        document.getElementById('radio'+cont).checked =true
+
+    }
+</script>
+
+</div>
+
+</section>
+</header>
+
+<body>
+    <button class="tablink" onclick="openpage('principal',this,'red')">principal</button>
+    <button class="tablink" onclick="openpage('futebol',this,'red')">futebol</button>
+    <button class="tablink" onclick="openpage('basquete',this,'red')">basquete</button>
+
+    <div id="principal" class="tabcontent">
+        <H3>roupas</H3>
+        <p>muitas roupas</p>
+    </div>
+
+    <div id="futebol" class="tabcontent">
+        <h3>futebol</h3>
+        <p>muito futebol</p>
+    </div>
+
+    <div id="basquete" class="tabcontent">
+        <h3>basquete</h3>
+        <p>muitas felicidades</p>
+    </div>
+
+    <script>
+    function openpage(loja,elmnt,color) {
+        var i , tabcontent , tablinks ;
+        tabcontent = document.getElementsByClassName ("tabcontent");
+        for(i = 0; i < tabcontent.length; i++){
+            tabcontent[i].style.display ="none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i =0; i <tablinks.length; i++){
+        tablinks[i].style.backgroundcolor = "";
+    }
+    document.getElementById(loja).style.display ="block";
+    elmnt.style.backgroundcolor =color;
+}
+
+document.getElementById("defaultopen").click();
+        </script>
+</body>
+</html>
