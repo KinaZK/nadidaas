@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadidas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <div class="navbar">
+        <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Início</a>  
+        <a href="#"><i class="fa fa-fw fa-envelope"></i> Contato</a> 
+        <button href="#" onclick="document.getElementById('id01').style.display='none'" style="width:auto;height: 1px;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="https://cdn.discordapp.com/attachments/1104582439491346463/1175814859724689499/do-utilizador.png?ex=656c99ec&is=655a24ec&hm=b09dac30e33e2f6622fac73e09ad75e5a84a12143a4b83a2e1ba37dc2162899a&" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="username" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+        <input type="text" placeholder="Procurar">
+      </div>
+<section class="slider">
+    <div class="slider-content">
+         
+        <input type="radio" name="btn-radio" id="radio1">
+        <input type="radio" name="btn-radio" id="radio2">
+        <input type="radio" name="btn-radio" id="radio3">
+
+        <div class="slider-box primeiro">
+            <img  src="https://www.esportelandia.com.br/wp-content/uploads/2020/03/uniforme-titular-manchester-city-2019-20.jpg" alt="camisa de time">
+        </div>
+    
+    <div class="slider-box">
+        <img  src="https://www.esportelandia.com.br/wp-content/uploads/2020/03/uniforme-reserva-barcelona-2019-20-1536x864.jpg"  alt="slider2">
+    </div>
+    
+    <div class="slider-box">
+        <img src="https://www.esportelandia.com.br/wp-content/uploads/2020/03/terceiro-uniforme-chelsea-2019-20.jpg"  alt="slider3">
+</div>
+    
+<div class="nav-auto">
+    <div class="auto-btn1"></div>
+    <div class="auto-btn2"></div>
+    <div class="auto-btn3"></div>
+</div>    
+
+<div class="nav-manual">
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+</div>
+
+<script src="./ta.js" defer></script>
+
+</div>
+
+</section>
+</header>
+
+<body>
+    <button class="tablink" onclick="openpage('principal',this,'red')">principal</button>
+    <button class="tablink" onclick="openpage('futebol',this,'red')">futebol</button>
+    <button class="tablink" onclick="openpage('basquete',this,'red')">basquete</button>
+    <button class="tablink" onclick="openpage('equipamento' ,this,'red')">equipamento</button>
+    <div id="principal" class="tabcontent">
+        <H2>Roupas</H2>
+        <p>Pra ficar no estilo</p> 
+        <img src="https://cdn.discordapp.com/attachments/1104582439491346463/1175634532637089963/Corinthians.png?ex=656bf1fa&is=65597cfa&hm=34afcf3d487aeb0aba47cd30a152054e03482aaa13601db303f6c05b5f311c5f&" alt="">
+        <h2>Calçados</h2>
+        <img src="https://media.discordapp.net/attachments/1104582439491346463/1175630368104263810/correta_under.png?ex=656bee19&is=65597919&hm=192d97ed5f5c61dfed78a529f27fc6f0cad78a52f94c47d069c0a40e7c4eccee&=" alt="">
+    </div>
+
+    <div id="futebol" class="tabcontent">
+    <h2>Futebol</h2>
+    <h2>Roupas e sla</h2>
+    <p>Melhores preços</p>
+    
+    <div id="basquete" class="tabcontent">
+        <h3>Baquete</h3>
+        <h2 style="text-align:center">Product Card</h2>
+        <div class="card">
+            
+            <img style="width: 100%;" src="https://media.discordapp.net/attachments/1104582439491346463/1175630368104263810/correta_under.png?ex=656bee19&is=65597919&hm=192d97ed5f5c61dfed78a529f27fc6f0cad78a52f94c47d069c0a40e7c4eccee&=" alt="tenis" >
+
+          <h1>Tailored Jeans</h1>
+          <p class="price">$19.99</p>
+          <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+          <p><button>Adicionar ao carrinho</button></p>
+            </div>
+        </div>
+    <div class="card">
+        
+        <img style="width: 100%;" src="https://cdn.discordapp.com/attachments/1104582439491346463/1175797971091193926/baskten.jpg?ex=656c8a31&is=655a1531&hm=f32d9fdd428ef1e525d3cf582a8ec3cc6d94296c6725e09d259240e10ddae4d1&" alt="enis" >
+        
+      <h1>Tailored Jeans</h1>
+      <p class="price">$42.99</p>
+      <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+      <p><button>Adicionar ao carrinho</button></p>
+    </div>
+    <div class="card">
+        
+        <img width="auto" height="200" src="https://cdn.discordapp.com/attachments/1104582439491346463/1175797971091193926/baskten.jpg?ex=656c8a31&is=655a1531&hm=f32d9fdd428ef1e525d3cf582a8ec3cc6d94296c6725e09d259240e10ddae4d1&" alt="enis" >
+        
+      <h1>Tailored Jeans</h1>
+      <p class="price">$42.99</p>
+      <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+      <p><button>Adicionar ao carrinho</button></p>
+        </div>
+    </div>
+    <div class="card">
+        <img width="auto" height="200" src="https://cdn.discordapp.com/attachments/1104582439491346463/1175801508839833641/ten1.jpg?ex=656c8d7d&is=655a187d&hm=72580188e3d2ed33df9aaf0a025b371f734f7f927ffe9ca1e7e52ae2441dd1f1&" alt="tenis" >
+      <h1>Tailored Jeans</h1>
+      <p class="price">$19.99</p>
+      <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+      <p><button>Adicionar ao carrinho</button></p>
+        </div>
+    </div>
+    
+    <div id="equipamento" class="tabcontent">
+        
+        <h2 style="text-align:center">Product Card</h2>
+        
+    <script>
+    function openpage(Nadidas,elmnt,color) {
+        var i , tabcontent , tablinks ;
+        tabcontent = document.getElementsByClassName ("tabcontent");
+        for(i = 0; i < tabcontent.length; i++){
+            tabcontent[i].style.display ="none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i =0; i <tablinks.length; i++){
+        tablinks[i].style.backgroundcolor = "";
+    }
+    document.getElementById(Nadidas).style.display ="block";
+    elmnt.style.backgroundcolor =color;
+}
+
+document.getElementById("defaultopen").click();
+        </script>
+</body>
+</html>
+
